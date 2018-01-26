@@ -5,6 +5,9 @@ const app = require('./src/app');
 
 const port = process.argv[2] || 3000
 
+app.get('/bingo', function(req, res) {
+  res.send('Bingo')
+})
 app.listen(port)
 
 // start server here
